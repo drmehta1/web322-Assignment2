@@ -3,7 +3,7 @@ const sectorFile = require("../data/sectorData.json");
 const projectFile = require("../data/projectData.json");
 
 // Local container
-let projects = [];
+let projects = [];//to hold processed objects
 
 /**
  * Prepare project list by attaching sector names
@@ -14,7 +14,7 @@ function initialize() {
             // Clear any previous values
             projects.length = 0;
 
-            // Manually build new array
+            // loops to all the projectData.json and
             for (let i = 0; i < projectFile.length; i++) {
                 const proj = projectFile[i];
                 let sectorName = "Unknown";

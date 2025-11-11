@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home | Climate Solutions</title>
+  <link rel="stylesheet" href="/css/main.css" />
+  <style>
+    /* Hero title gradient */
+    .hero-title {
+      background: linear-gradient(90deg, #7dd3fc, #a78bfa, #c084fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Adjust hero position and spacing */
+    .hero-section {
+      margin-top: 4rem;   /* pushes title down */
+      margin-bottom: 4rem;
+    }
+
+    /* Simplify cards (no hover animation) */
+    .card {
+      transition: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      transition: none;
+    }
+
+    /* Optional: add soft rounded edges */
+    .card {
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body data-theme="dim">
+  <%- include('partials/navbar', { page: '/' }) %>
+
+  <main class="container mx-auto p-10">
+    <!-- Hero Section -->
+    <section class="bg-base-200 rounded-2xl p-12 text-center shadow-xl hero-section">
+     <h1 class="text-6xl font-extrabold text-white tracking-wide mb-4 drop-shadow-lg">
+  Explore Climate Projects
+</h1>
+<p class="text-lg text-gray-300 mb-6">
+  Discover innovative, data-driven solutions helping build a sustainable and resilient future.
+</p>
+
+      <a href="/solutions/projects" class="btn btn-primary px-6 py-2 text-lg">View Projects</a>
+    </section>
+
+    <!-- Project Highlights -->
+    <section class="grid md:grid-cols-3 gap-10">
+      <!-- Project 1 -->
+      <div class="card bg-base-200 shadow-xl">
+        <figure>
+          <img src="/images/p1.jpeg" alt="Renewable Energy Expansion" class="h-56 w-full object-cover" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-xl font-semibold">Renewable Energy Expansion</h2>
+          <p>Harnessing solar and wind power for a greener future.</p>
+          <div class="card-actions justify-end">
+            <a href="/solutions/projects?sector=4" class="btn btn-outline btn-sm">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card bg-base-200 shadow-xl">
+        <figure>
+          <img src="/images/p2.jpeg" alt="Green Transportation" class="h-56 w-full object-cover" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-xl font-semibold">Green Transportation</h2>
+          <p>Promoting electric vehicles and low-carbon transit systems.</p>
+          <div class="card-actions justify-end">
+            <a href="/solutions/projects?sector=3" class="btn btn-outline btn-sm">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card bg-base-200 shadow-xl">
+        <figure>
+          <img src="/images/p3.jpeg" alt="Eco-friendly Buildings" class="h-56 w-full object-cover" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-xl font-semibold">Eco-friendly Buildings</h2>
+          <p>Innovative construction minimizing energy consumption.</p>
+          <div class="card-actions justify-end">
+            <a href="/solutions/projects?sector=2" class="btn btn-outline btn-sm">View More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

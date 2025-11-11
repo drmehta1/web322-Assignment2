@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About | Climate Solutions</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body data-theme="dim">
+  <%- include('partials/navbar', { page: '/about' }) %>
+
+  <main class="container mx-auto p-10">
+    <!-- Hero Section -->
+    <section class="hero bg-base-200 rounded-xl p-10 text-center shadow-xl">
+      <h1 class="text-6xl font-extrabold text-white mb-6 drop-shadow-lg">
+        About Me
+      </h1>
+      <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+        Passionate developer exploring how technology supports sustainability.
+      </p>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="grid md:grid-cols-2 gap-12 mt-12 items-center">
+      <img
+        src="/images/me.jpeg"
+        alt="Me"
+        class="rounded-2xl shadow-2xl w-full h-96 object-cover hover:scale-105 transition-transform duration-300"
+      />
+      <div>
+        <h2 class="text-3xl font-bold mb-4 text-white">Hi, I'm Dhairya Rakeshkumar Mehta👋</h2>
+        <p class="text-gray-300 leading-relaxed text-lg">
+          I’m currently studying Computer Programming at <strong>Seneca Polytechnic</strong>.
+          I love building projects that blend technology and environmental awareness, and I’m
+          passionate about contributing to sustainability-focused innovations.
+          <br>Student Number: 170367239</p>
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
