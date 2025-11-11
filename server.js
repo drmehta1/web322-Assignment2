@@ -1,10 +1,13 @@
-/********************************************************************************
+/*********************************************************************************
  *  WEB322 – Assignment 02
  *  I declare that this assignment is my own work in accordance with Seneca's
  *  Academic Integrity Policy.
  *
- *  Name: YOUR NAME     Student ID: XXXXXXXX     Date: YYYY-MM-DD
+ *  Name: Dhairya Rakeshkumar Mehta     Student ID: 170367239     Date: 2025-11-11
+ *
+ *  Published URL: https://web322-f25-a2.vercel.app/
  ********************************************************************************/
+
 
 const express = require("express");
 const path = require("path");
@@ -22,9 +25,7 @@ app.set("views", __dirname + "/views");
 // Serve static files
 app.use(express.static("public"));
 
-/* ------------------------------
-   ROUTES
---------------------------------*/
+/* ROUTES*/
 
 // Home
 app.get("/", (req, res) => {
@@ -101,13 +102,11 @@ app.use((req, res) => {
     .status(404)
     .render("404", {
       page: "",
-      message: "I'm sorry, we're unable to find what you're looking for.",
+      message: " we're unable to find what you're looking for.",
     });
 });
 
-/* ------------------------------
-   START SERVER
---------------------------------*/
+/* START SERVER*/
 app.listen(HTTP_PORT, () =>
   console.log(`Server running at http://localhost:${HTTP_PORT}`)
 );
