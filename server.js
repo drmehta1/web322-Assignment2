@@ -3,7 +3,7 @@
  *  I declare that this assignment is my own work in accordance with Seneca's
  *  Academic Integrity Policy.
  *
- *  Name: Dhairya Rakeshkumar Mehta     Student ID: 170367239     Date: 2025-11-11
+ *  Name: Dhairya Rakeshkumar Mehta     Student ID: 170     Date: 2025-11-11
  *
  *  Published URL: https://web322-f25-a2.vercel.app/
  ********************************************************************************/
@@ -23,7 +23,8 @@ app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
 
 // Serve static files
-app.use(express.static("public"));
+app.use("/public", express.static(path.join(__dirname, "public")));
+
 
 /* ROUTES*/
 
